@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌨</text></svg>">
+
+    <title>Voyage 2k25</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            --col: var(--hero-text);
+            transition: 0.3s ease-in all;
+        }
+
+        .loader {
+            width: 17px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: hsl(210, 35%, 46%);
+            display: grid;
+            animation: l22-0 2s infinite linear;
+        }
+
+        .loader:before,
+        .loader:after {
+            content: "";
+            grid-area: 1/1;
+            margin: 15%;
+            border-radius: 50%;
+            background: inherit;
+            transform: rotate(0deg) translate(150%);
+            animation: l22 1s infinite;
+        }
+
+        .loader:after {
+            animation-delay: -.5s
+        }
+
+        @keyframes l22-0 {
+            100% {
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes l22 {
+            100% {
+                transform: rotate(1turn) translate(150%)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <div class="maincard gradient">
+            <div class="pre-card">
+                Dept. of Computer Science and Engineering, University of Kalyani <br>
+                <i>presents :</i>
+
+            </div>
+            <div class="hero-text">
+                Voyage 2k25
+            </div>
+            <div class="hero-small">
+                22<sup>nd</sup> and 23<sup>rd</sup> February, 2025
+            </div>
+            <div class="buttons-area">
+                <a href="https://tally.so/r/3Nb56W" class="register-link">Student Registration</a>
+                <a href="https://tally.so/r/mZPOZA" class="register-link">Alumni Registration</a>
+                <!-- <a href="" class="installment-link">Pay 2nd Installment</a> -->
+            </div>
+        </div>
+        <div class="large-card">
+            <p class="large-text">
+                Join us for an exhilarating celebration that brings together the entire department in a vibrant
+                blend of tradition and creativity! With brand new events planned alongside the usual
+                festivities - there's something captivating for everyone. Mark your calendars for
+                <b> Voyage&nbsp;2k25</b>!
+            </p>
+            <!-- <p class="sponby">
+                Thanks to our Sponsors :
+            </p>
+            <div class="sponsors">
+                <img src="sponsors/1.png" alt="">
+                <img src="sponsors/2.png" alt="">
+                <img src="sponsors/3.png" alt="">
+                <img src="sponsors/4.png" alt="">
+                <img src="sponsors/5.png" alt="">
+            </div> -->
+        </div>
+        <div class="flex-layout red">
+            <div class="card c-shadow">
+                <h2>Main Event</h2>
+                <p>We're looking forward to an afternoon brimming with vibrant cultural performances and artistic
+                    expression. It's a unique opportunity to immerse in the creative showcases and make lasting
+                    memories, as we honor our graduating batches with a warm farewell, welcome the freshers with open
+                    arms, and provide a cherished reunion for our alumni. </p>
+            </div>
+            <div class=" card-img">
+                <img src="images/stage.jpg" alt="Stage" loading="lazy">
+            </div>
+        </div>
+        <div class="flex-layout blue">
+            <div class=" card-img">
+                <img src="images/seminar.jfif" alt="Seminar" loading=" lazy"">
+            </div>
+            <div class=" card c-shadow">
+                <h2>Academic Session</h2>
+                <p>For the first time, we're thrilled to host a special Alumni Interaction Session on February 22nd—an
+                    opportunity for our alumni to reconnect, share their experiences, and inspire us with their words,
+                    while we gain valuable insights and guidance.
+                </p>
+            </div>
+        </div>
+        <div class="flex-layout green">
+            <div class="card c-shadow">
+                <h2>Sports Activites</h2>
+                <p>In the week leading up to the main event, gear up for a variety of sports and games! With a mix of
+                    indoor and outdoor activities, it’s a great way for students across different batches to come
+                    together, compete, and have fun. Whether you're in it to win or just to enjoy the moment, there’s
+                    something for everyone!
+                </p>
+            </div>
+            <div class="card-img">
+                <img src="images/field.jpg" alt="Field" loading="lazy">
+            </div>
+        </div>
+        <div class="large-card ">
+            <p class="large-text cta">
+                Register today and confirm your presence at <b>Voyage 2k25</b>!
+            </p>
+
+
+            <a href="https://tally.so/r/3Nb56W" class="register-link">Student Registration</a>
+            <a href="https://tally.so/r/mZPOZA" class="register-link">Alumni Registration</a>
+            <!-- <a href="" class="installment-link">Pay 2nd Installment</a> -->
+            <br>
+            <p class="contact">
+                <b>GS</b> : Subhajit Gorai - MCA 2<sup>nd</sup> Year (6295727383) <br>
+                <b>AGS</b> : Aritra Banerjee - MDS 2<sup>nd</sup> Year (8677872195) <br>
+                <b>AGS</b> : Amit Mondal - B.Tech 2<sup>nd</sup> Year (8777359331)
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // document
+        document.addEventListener('DOMContentLoaded', function () {
+            document.fonts.ready.then(function () {
+                preloader.style.opacity = '0';
+
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 300);
+            });
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
