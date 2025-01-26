@@ -95,7 +95,6 @@ body {
     border-radius: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    /* border: 4px solid hsl(37, 79%, 34%); */
 }
 
 .pre-card {
@@ -103,14 +102,12 @@ body {
     font-size: 1.15em;
     line-height: 1.25;
     font-family: 'Telegraf', sans-serif;
-    /* font-weight: 200; */
     margin-bottom: 40px;
 }
 
 .large-card {
     padding: 40px 30px;
-    /* padding-top: 40px; */
-    /* background-color: gainsboro; */
+    /* padding-top: 40px; *insboro; */
     border-radius: 20px;
     margin: 40px 0;
     text-align: center;
@@ -141,11 +138,8 @@ p.sponby {
 
 .sponsors img {
     max-width: 150px;
-    /* Set a max width for each logo */
     width: auto;
-    /* Allow the images to take up space based on their aspect ratio */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 
@@ -176,7 +170,6 @@ p.sponby {
     color: var(--emi-link-text);
     text-underline-offset: 4px;
     margin-left: 5px;
-    /* text-decoration: none; */
 }
 
 .installment-link:hover {
@@ -261,7 +254,6 @@ p.sponby {
     .register-link:active {
         transform: translate(2px, 2px);
         box-shadow: 1px 1px 0 0 var(--reg-link-shadow);
-        background-color: rgb(89, 2, 2);
     }
 
     .installment-link {
@@ -270,7 +262,6 @@ p.sponby {
         font-size: 0.8em;
         color: var(--emi-link-text);
         text-underline-offset: 4px;
-        /* text-decoration: none; */
     }
 
 }
