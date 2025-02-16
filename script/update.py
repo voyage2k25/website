@@ -9,7 +9,7 @@ TEMPLATE_FILE = os.path.join(os.path.dirname(__file__), "template.html")
 
 # Load environment variables
 API_URL = os.environ.get("API_URL")
-API_PASSWORD = os.environ.get("API_PASSWORD")
+API_PASSWORD = os.environ.get("API_KEY")
 
 # Ensure API credentials are available
 if not API_URL or not API_PASSWORD:
