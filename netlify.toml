@@ -1,0 +1,12 @@
+# Global rewrite
+[[redirects]]
+  from = "/*"
+  to = "/site/:splat"
+  status = 200
+  force = true
+
+# Clean urls
+[[redirects]]
+  from = "/p/:id"
+  to = "/p/:id.html"
+  status = 200
