@@ -59,6 +59,7 @@ try:
     data = {"data": api_data["data"] + DEFAULT_JSON["data"]}  # Append test data
 except (requests.RequestException, ValueError) as e:
     print(f"❌ API request failed: {e}")
+    print("Response Text : ", response.text)
     print("⚠️ Using test data only. Aborting.")
     data = DEFAULT_JSON
     exit(1)
