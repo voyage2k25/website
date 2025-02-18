@@ -386,7 +386,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item {% if data.paid < data.payable %} yellow {% else %} green {% endif %}">
+            <div class="item {% if data.paid|int < data.payable|int %} yellow {% else %} green {% endif %}">
                 <div class="emoji">
                     <img src="/images/coins.svg" alt="">
                 </div>
