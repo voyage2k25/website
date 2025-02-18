@@ -20,7 +20,7 @@ if not API_URL or not API_PASSWORD:
 DEFAULT_JSON = {
     "data": [
         {
-            "id": "test1",
+            "id": "TEST1",
             "batch": "B.Tech 3rd",
             "food": "Non Veg",
             "items_rec": "T-SHIRT, TIFFIN",
@@ -30,7 +30,7 @@ DEFAULT_JSON = {
             "tshirt": "Size : XL",
         },
         {
-            "id": "test2",
+            "id": "TEST2",
             "batch": "B.Tech 3rd",
             "food": "Non Veg",
             "items_rec": "None",
