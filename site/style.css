@@ -82,8 +82,8 @@ body {
 
 .hero-small {
     color: var(--date-text);
-    font-size: 1.2em;
-    margin-bottom: 50px;
+    font-size: 1.3em;
+    margin-bottom: 40px;
     font-family: 'Telegraf', sans-serif;
     font-weight: 800;
 }
@@ -177,6 +177,18 @@ p.sponby {
     text-underline-offset: 4px;
 }
 
+p.links {
+    margin: 0 auto;
+    max-width: 55%;
+    font-size: 1.15em;
+    line-height: 1.3;
+}
+
+p.links a {
+    color: var(--date-text);
+    text-underline-offset: 2px;
+}
+
 @media only screen and (max-width: 600px) {
 
     .maincard {
@@ -199,8 +211,8 @@ p.sponby {
     }
 
     .hero-small {
-        font-size: 0.8em;
-        margin-bottom: 30px;
+        font-size: 1em;
+        margin-bottom: 25px;
     }
 
 
@@ -262,6 +274,12 @@ p.sponby {
         font-size: 0.8em;
         color: var(--emi-link-text);
         text-underline-offset: 4px;
+    }
+
+    p.links {
+        color: var(--dept-text);
+        font-size: 0.90em;
+        max-width: 90%;
     }
 
 }
@@ -347,7 +365,7 @@ p.contact {
 
 
 p.contact b {
-    color : hsl(209, 67%, 24%);
+    color: hsl(209, 67%, 24%);
 }
 
 
